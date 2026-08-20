@@ -87,7 +87,7 @@ export default function CollectionManager() {
           <button
             onClick={handleCreate}
             disabled={busy}
-            className="inline-flex items-center gap-1.5 rounded-full bg-ink-900 hover:bg-ink-800 disabled:opacity-60 text-ivory-100 px-4 py-2.5 text-[10px] tracking-luxe uppercase font-light transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-full bg-ivory-100 hover:bg-ivory-200 disabled:opacity-60 text-ink-900 px-4 py-2.5 text-[10px] tracking-luxe uppercase font-light transition-colors"
           >
             {busy ? <Loader2 size={12} className="animate-spin" /> : <Plus size={12} />}
             Add

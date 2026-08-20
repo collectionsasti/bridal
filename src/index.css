@@ -19,31 +19,31 @@
 
   ::selection {
     background: rgba(205, 168, 97, 0.28);
-    color: #1a1714;
+    color: #f5f0e6;
   }
 
   ::-webkit-scrollbar {
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #f1ebdd;
+    background: #0d0d0d;
   }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#dcbd84, #bd8f44);
+    background: linear-gradient(#cda861, #9c7635);
     border-radius: 999px;
   }
 }
 
 @layer utilities {
   .text-gold-gradient {
-    background: linear-gradient(120deg, #9c7635 0%, #cda861 45%, #7a5b29 100%);
+    background: linear-gradient(120deg, #cda861 0%, #e8c987 45%, #cda861 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .bg-gold-shimmer {
-    background: linear-gradient(110deg, #bd8f44 0%, #f4e9d2 30%, #cda861 55%, #9c7635 100%);
+    background: linear-gradient(110deg, #cda861 0%, #e8c987 30%, #cda861 55%, #bd8f44 100%);
     background-size: 200% 100%;
   }
 
@@ -53,7 +53,7 @@
 
   .hairline {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(156,118,53,0.5), transparent);
+    background: linear-gradient(90deg, transparent, rgba(205,168,97,0.5), transparent);
   }
 
   .no-scrollbar {

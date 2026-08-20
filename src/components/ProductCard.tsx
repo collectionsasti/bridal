@@ -32,7 +32,7 @@ export default function ProductCard({ product, onOpen }: ProductCardProps) {
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink-900/40 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ivory-100/40 via-transparent to-transparent opacity-70 group-hover:opacity-90 transition-opacity" />
 
         {/* Film badge */}
         {product.video_url && (
@@ -42,7 +42,7 @@ export default function ProductCard({ product, onOpen }: ProductCardProps) {
           </div>
         )}
 
-        <span className="absolute bottom-3 right-3 inline-flex items-center gap-1.5 text-[10px] tracking-luxe uppercase text-ivory-100 bg-ink-900/40 backdrop-blur-sm rounded-full px-3 py-1.5 opacity-0 group-hover:opacity-100 transition-all">
+        <span className="absolute bottom-3 right-3 inline-flex items-center gap-1.5 text-[10px] tracking-luxe uppercase text-ink-900 bg-ivory-100/40 backdrop-blur-sm rounded-full px-3 py-1.5 opacity-0 group-hover:opacity-100 transition-all">
           View
           <ArrowUpRight size={12} />
         </span>

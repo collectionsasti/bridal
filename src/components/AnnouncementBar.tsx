@@ -10,14 +10,14 @@ const ITEMS = [
 export default function AnnouncementBar() {
   const loop = [...ITEMS, ...ITEMS];
   return (
-    <div className="bg-ink-900 text-ivory-100 overflow-hidden">
+    <div className="bg-ivory-100 text-ink-900 overflow-hidden">
       <div className="relative flex whitespace-nowrap animate-marquee py-2.5">
         {loop.map((item, i) => (
           <span
             key={i}
             className="inline-flex items-center gap-2.5 px-8 text-[11px] sm:text-xs tracking-luxe uppercase font-light"
           >
-            <span className="text-champagne-300">✦</span>
+            <span className="text-champagne-400">✦</span>
             {item.text}
             <span className="text-champagne-500/60 ml-3">•</span>
           </span>

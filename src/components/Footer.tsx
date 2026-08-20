@@ -27,7 +27,6 @@ export default function Footer({ onNavigate }: FooterProps) {
     { label: 'Home', key: 'home' },
     { label: 'Shop', key: 'shop' },
     { label: 'Contact', key: 'contact' },
-    { label: 'Admin', key: 'admin' },
   ];
 
   return (

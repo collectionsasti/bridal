@@ -38,7 +38,7 @@ export default function AboutStrip() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="absolute inset-3 border border-ivory-100/40 pointer-events-none" />
+              <div className="absolute inset-3 border border-ink-900/40 pointer-events-none" />
               <div className="absolute -bottom-6 -right-4 sm:-right-6 bg-ivory-50 border border-stone-200 rounded-sm px-6 py-5 shadow-lux">
                 <p className="font-display text-4xl text-gold-gradient leading-none">14+</p>
                 <p className="text-[10px] tracking-luxe uppercase text-ink-600 font-light mt-1.5">

@@ -70,7 +70,7 @@ export default function AdminDashboard({ onExit }: AdminDashboardProps) {
             </button>
             <button
               onClick={() => setCreating(true)}
-              className="inline-flex items-center gap-2 rounded-full bg-ink-900 hover:bg-ink-800 text-ivory-100 px-5 py-2 text-[11px] tracking-luxe uppercase font-light transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-ivory-100 hover:bg-ivory-200 text-ink-900 px-5 py-2 text-[11px] tracking-luxe uppercase font-light transition-colors"
             >
               <Plus size={14} />
               New suit
@@ -99,7 +99,7 @@ export default function AdminDashboard({ onExit }: AdminDashboardProps) {
             </p>
             <button
               onClick={() => setCreating(true)}
-              className="inline-flex items-center gap-2 rounded-full bg-ink-900 hover:bg-ink-800 text-ivory-100 px-5 py-2.5 text-[11px] tracking-luxe uppercase font-light transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-ivory-100 hover:bg-ivory-200 text-ink-900 px-5 py-2.5 text-[11px] tracking-luxe uppercase font-light transition-colors"
             >
               <Plus size={14} />
               Add a suit
@@ -131,7 +131,7 @@ export default function AdminDashboard({ onExit }: AdminDashboardProps) {
                     </span>
                   </div>
                   {p.video_url && (
-                    <div className="absolute top-2 right-2 inline-flex items-center gap-1 rounded-full bg-ink-900/70 backdrop-blur-sm px-2 py-1">
+                    <div className="absolute top-2 right-2 inline-flex items-center gap-1 rounded-full bg-ivory-100/70 backdrop-blur-sm px-2 py-1">
                       <Film size={10} className="text-champagne-300" fill="currentColor" />
                     </div>
                   )}

@@ -27,7 +27,7 @@ export default function CategoryBar({ active, onChange, collections, counts }: C
                 className={[
                   'inline-flex items-center gap-2 rounded-full px-4 sm:px-5 py-2 text-[11px] sm:text-xs tracking-luxe uppercase font-light whitespace-nowrap transition-all border',
                   isActive
-                    ? 'bg-ink-900 text-ivory-100 border-ink-900'
+                    ? 'bg-ivory-100 text-ink-900 border-ivory-100'
                     : 'bg-transparent text-ink-600 border-stone-300 hover:border-champagne-500 hover:text-champagne-700',
                 ].join(' ')}
               >
@@ -36,7 +36,7 @@ export default function CategoryBar({ active, onChange, collections, counts }: C
                   <span
                     className={[
                       'inline-flex items-center justify-center min-w-[18px] h-[18px] rounded-full text-[9px] px-1',
-                      isActive ? 'bg-ivory-100/20 text-ivory-100' : 'bg-stone-200 text-ink-600',
+                      isActive ? 'bg-ink-900/20 text-ink-900' : 'bg-stone-200 text-ink-600',
                     ].join(' ')}
                   >
                     {count}

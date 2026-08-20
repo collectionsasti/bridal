@@ -179,7 +179,7 @@ export default function ProductDetail({ slug, onBack, onOpenProduct }: ProductDe
 
               <div
                 className={[
-                  'absolute inset-0 bg-ink-900 transition-opacity duration-500',
+                  'absolute inset-0 bg-ivory-100 transition-opacity duration-500',
                   mode === 'video' ? 'opacity-100' : 'opacity-0 pointer-events-none',
                 ].join(' ')}
               >
@@ -198,11 +198,11 @@ export default function ProductDetail({ slug, onBack, onOpenProduct }: ProductDe
                 {!videoPlaying && mode === 'video' && (
                   <button
                     onClick={toggleVideoPlay}
-                    className="absolute inset-0 flex items-center justify-center bg-ink-900/40"
+                    className="absolute inset-0 flex items-center justify-center bg-ivory-100/40"
                     aria-label="Play embroidery film"
                   >
                     <span className="flex h-16 w-16 items-center justify-center rounded-full border border-champagne-400/60 bg-ivory-100/15 backdrop-blur-sm">
-                      <Play size={22} className="text-ivory-100 ml-1" fill="currentColor" />
+                      <Play size={22} className="text-ink-900 ml-1" fill="currentColor" />
                     </span>
                   </button>
                 )}
@@ -214,7 +214,7 @@ export default function ProductDetail({ slug, onBack, onOpenProduct }: ProductDe
                   className={[
                     'inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[10px] tracking-luxe uppercase transition-all',
                     mode === 'photo'
-                      ? 'bg-ink-900 text-ivory-100'
+                      ? 'bg-ivory-100 text-ink-900'
                       : 'text-ink-600 hover:text-ink-900',
                   ].join(' ')}
                 >
@@ -227,7 +227,7 @@ export default function ProductDetail({ slug, onBack, onOpenProduct }: ProductDe
                     className={[
                       'inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[10px] tracking-luxe uppercase transition-all',
                       mode === 'video'
-                        ? 'bg-ink-900 text-ivory-100'
+                        ? 'bg-ivory-100 text-ink-900'
                         : 'text-ink-600 hover:text-ink-900',
                     ].join(' ')}
                   >
@@ -238,9 +238,9 @@ export default function ProductDetail({ slug, onBack, onOpenProduct }: ProductDe
               </div>
 
               {mode === 'video' && (
-                <div className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-ink-900/70 backdrop-blur-md border border-champagne-400/30 px-3 py-1.5">
+                <div className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-ivory-100/70 backdrop-blur-md border border-champagne-400/30 px-3 py-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
-                  <span className="text-[10px] tracking-luxe uppercase text-ivory-100/85">
+                  <span className="text-[10px] tracking-luxe uppercase text-ink-900/85">
                     Close-up Embroidery Film
                   </span>
                 </div>
@@ -269,7 +269,7 @@ export default function ProductDetail({ slug, onBack, onOpenProduct }: ProductDe
                 <button
                   onClick={() => switchMode('video')}
                   className={[
-                    'relative aspect-square overflow-hidden rounded-sm border flex items-center justify-center bg-ink-900 transition-all',
+                    'relative aspect-square overflow-hidden rounded-sm border flex items-center justify-center bg-ivory-100 transition-all',
                     mode === 'video'
                       ? 'border-champagne-500 ring-1 ring-champagne-500/40'
                       : 'border-stone-300 opacity-70 hover:opacity-100',
@@ -320,7 +320,7 @@ export default function ProductDetail({ slug, onBack, onOpenProduct }: ProductDe
                   'inline-flex items-center justify-center gap-3 rounded-full px-8 py-4 text-[12px] tracking-luxe uppercase font-semibold shadow-soft transition-all hover:scale-[1.02]',
                   addedToCart
                     ? 'bg-green-600 text-white'
-                    : 'bg-ink-900 hover:bg-ink-800 text-ivory-100',
+                    : 'bg-ivory-100 hover:bg-ivory-200 text-ink-900',
                 ].join(' ')}
               >
                 <ShoppingCart size={18} />
@@ -365,12 +365,12 @@ export default function ProductDetail({ slug, onBack, onOpenProduct }: ProductDe
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-[1.4s] group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink-900/85 via-ink-900/25 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ivory-100/85 via-ivory-100/25 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-6">
                     <span className="text-[10px] tracking-luxe uppercase text-champagne-300/90">
                       {p.collection_label}
                     </span>
-                    <h4 className="font-display text-2xl text-ivory-50">{p.name}</h4>
+                    <h4 className="font-display text-2xl text-ink-900">{p.name}</h4>
                   </div>
                 </button>
               ))}

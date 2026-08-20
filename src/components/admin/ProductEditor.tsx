@@ -224,7 +224,7 @@ export default function ProductEditor({ product, onSaved, onCancel }: ProductEdi
           <button
             type="submit"
             disabled={saving}
-            className="inline-flex items-center gap-2 rounded-full bg-ink-900 hover:bg-ink-800 disabled:opacity-60 px-5 py-2 text-ivory-100 text-[11px] tracking-luxe uppercase font-light transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-ivory-100 hover:bg-ivory-200 disabled:opacity-60 px-5 py-2 text-ink-900 text-[11px] tracking-luxe uppercase font-light transition-colors"
           >
             {saving ? <Loader2 size={14} className="animate-spin" /> : <Save size={14} />}
             {saving ? 'Saving…' : 'Save'}
@@ -361,7 +361,7 @@ export default function ProductEditor({ product, onSaved, onCancel }: ProductEdi
               onClick={() => setAddMode('upload')}
               className={[
                 'inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[10px] tracking-luxe uppercase font-light transition-all',
-                addMode === 'upload' ? 'bg-ink-900 text-ivory-100' : 'text-ink-600 hover:text-ink-900',
+                addMode === 'upload' ? 'bg-ivory-100 text-ink-900' : 'text-ink-600 hover:text-ink-900',
               ].join(' ')}
             >
               <Upload size={11} />
@@ -372,7 +372,7 @@ export default function ProductEditor({ product, onSaved, onCancel }: ProductEdi
               onClick={() => setAddMode('url')}
               className={[
                 'inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[10px] tracking-luxe uppercase font-light transition-all',
-                addMode === 'url' ? 'bg-ink-900 text-ivory-100' : 'text-ink-600 hover:text-ink-900',
+                addMode === 'url' ? 'bg-ivory-100 text-ink-900' : 'text-ink-600 hover:text-ink-900',
               ].join(' ')}
             >
               <Link size={11} />
@@ -460,11 +460,11 @@ export default function ProductEditor({ product, onSaved, onCancel }: ProductEdi
                 >
                   <img src={url} alt="" className="h-full w-full object-cover" />
                   {input.image === url && (
-                    <span className="absolute top-1.5 left-1.5 rounded-full bg-ink-900 text-ivory-100 text-[8px] tracking-luxe uppercase px-2 py-0.5">
+                    <span className="absolute top-1.5 left-1.5 rounded-full bg-ivory-100 text-ink-900 text-[8px] tracking-luxe uppercase px-2 py-0.5">
                       Primary
                     </span>
                   )}
-                  <div className="absolute inset-0 bg-ink-900/0 group-hover:bg-ink-900/40 transition-colors flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+                  <div className="absolute inset-0 bg-ivory-100/0 group-hover:bg-ivory-100/40 transition-colors flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
                     {input.image !== url && (
                       <button
                         type="button"

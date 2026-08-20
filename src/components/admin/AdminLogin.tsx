@@ -96,7 +96,7 @@ export default function AdminLogin({ onBack, onSuccess }: AdminLoginProps) {
             <button
               type="submit"
               disabled={loading}
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 hover:bg-ink-800 disabled:opacity-60 px-6 py-3.5 text-ivory-100 text-[11px] tracking-luxe uppercase font-light transition-colors"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-ivory-100 hover:bg-ivory-200 disabled:opacity-60 px-6 py-3.5 text-ink-900 text-[11px] tracking-luxe uppercase font-light transition-colors"
             >
               {loading ? <Loader2 size={16} className="animate-spin" /> : <Lock size={15} />}
               {loading ? 'Signing in…' : 'Sign In'}
